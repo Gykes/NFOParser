@@ -151,6 +151,7 @@ class NfoSceneParser:
             "details": (self._file_data["details"] or self._scene["details"] or None) if "details" not in bl else None,
             "date": (self._file_data["date"] or self._scene["date"] or None) if "date" not in bl else None,
             "rating": (self._file_data["rating"] or self._scene["rating"] or None) if "rating" not in bl else None,
+            "director": self._file_data["director"],
             # TODO: scene URL is now an array
             "urls": (self._file_data["urls"] or self._scene["urls"] or None) if "urls" not in bl else None,
             "studio_id": file_studio_id or scene_studio_id or None,

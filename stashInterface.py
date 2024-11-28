@@ -153,6 +153,7 @@ class StashInterface:
             "studio_id": scene_data["studio_id"], 
             "performer_ids": scene_data["performer_ids"],
             "tag_ids": scene_data["tag_ids"],
+            "director": scene_data["director"],
         }
         if scene_data["cover_image"] is not None:
             input_data.update({"cover_image": scene_data["cover_image"]})
